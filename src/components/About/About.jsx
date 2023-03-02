@@ -22,36 +22,36 @@ const About = () => {
               data-wow-delay=".2s"
             >
               <div className="section-title section-title-two mb-15">
-                <span className="sub-title">ABOUT Crypto ICO</span>
+                <span className="sub-title">ABOUT PEPA ERC</span>
                 <h2 className="title">
-                  Bigtech Theme is the best for your ICO
+                  Meet Pepa, the wife of the infamous Pepe the frog.
                 </h2>
               </div>
               <p>
-                The World’s 1st ICO Platform That Offers Rewards and The
-                platform helps investors to make easy
+                2023 is the year of Pepa. Out with the dog tokens, and in with the frog tokens. Pepa token is a community driven meme token with a focus on providing utility to holders.
               </p>
               <div className="about-list">
                 <ul>
                   <li>
-                    <i className="fas fa-check"></i>Mouthwatering leading how
-                    real formula also
+                    <i className="fas fa-check"></i>0% buy and sell tax
                   </li>
                   <li>
-                    <i className="fas fa-check"></i>Locked-in have can mountain
-                    thought
+                    <i className="fas fa-check"></i>Liquidity burnt forever
+                  </li>
+                  <li>
+                    <i className="fas fa-check"></i>Renounced
                   </li>
                 </ul>
               </div>
 
               <a
-                href={aboutImg}
+                href={'/downloads/PepaPaperV1.pdf'}
                 download
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-two"
               >
-                Download Document
+                Download Whitepaper
               </a>
             </div>
           </div>

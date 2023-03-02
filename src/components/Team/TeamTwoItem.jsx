@@ -12,23 +12,8 @@ const TeamTwoItem = (props) => {
 
         <ul className="team-social">
           <li>
-            <a href="#">
-              <i className="fab fa-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fab fa-instagram"></i>
+            <a href="https://t.me/rhysHODL">
+              <i className="fab fa-telegram"></i>
             </a>
           </li>
         </ul>

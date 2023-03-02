@@ -20,7 +20,7 @@ const RoadmapTwo = () => {
           <li>- CMC Listing</li>
           <li>- Coin Gecko Listing</li>
           <li>- dApp Live</li>
-          <li>- Staking & rewards</li>
+          <li>- Pepa Staking w/ rewards</li>
         </>
       ),
     },
@@ -41,6 +41,26 @@ const RoadmapTwo = () => {
       title: "Operational",
       info: <><li>- CEX Listing</li>
         <li>- YouTube Reviews</li>
+        <li>- Onboard Ambassador</li>
+        <li>- LP Staking added</li>
+      </>,
+    },
+    {
+      roadmapTitle: "Q3 2023 - August/September",
+      title: "Stepping up the Game",
+      info: <><li>- NFT Run (Round 2)</li>
+        <li>- Cross chain liquidity</li>
+        <li>- CEX Listing</li>
+        <li>- Execute marketing strategy</li>
+      </>,
+    },
+    {
+      roadmapTitle: "Stretch Goals",
+      title: "Stepping up the Game",
+      info: <><li>- NFT Marketplace</li>
+        <li>- Launch Pad</li>
+        <li>- Metaverse (UE5)</li>
+        <li>+ More in the future</li>
       </>,
     },
   ];
@@ -63,13 +83,13 @@ const RoadmapTwo = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="roadmap-wrap-two">
-              {roadmap_items.map((x, index) => (
+              {roadmap_items.slice(0, 4).map((x, index) => (
                 <RoadmapTwoItem key={index} item={x} />
               ))}
             </div>
 
             <div className="roadmap-wrap-two bottom">
-              {roadmap_items.map((x, index) => (
+              {roadmap_items.slice(4, 8).map((x, index) => (
                 <RoadmapTwoItem key={index} item={x} />
               ))}
             </div>

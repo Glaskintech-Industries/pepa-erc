@@ -27,24 +27,27 @@ const CounterArea = () => {
             <div className="col-lg-4 col-sm-6">
               <CounterAreaItem
                 icon={icon}
-                amount={amount + 23}
+                amount={0}
                 title="Price"
+                suffix=""
               />
             </div>
 
             <div className="col-lg-4 col-sm-6">
               <CounterAreaItem
                 icon={icon}
-                amount={amount + 89}
+                amount={0}
                 title="Marketcap"
+                suffix="K"
               />
             </div>
 
             <div className="col-lg-4 col-sm-6">
               <CounterAreaItem
                 icon={icon}
-                amount={amount + 37}
+                amount={0}
                 title="TLV"
+                suffix="K"
               />
             </div>
           </div>

@@ -90,7 +90,8 @@ button:focus {
 a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
-  color: #000000;
+  color: #3cad2d;
+  ;
   text-decoration: none;
 }
 
@@ -313,7 +314,7 @@ label {
 }
 
 .btn.btn-two {
-  background: #564dca;
+  background: #3cad2d;
   border-radius: 5px;
   padding: 25px 42px;
   border: none;
@@ -696,8 +697,17 @@ label {
 }
 
 .menu-style-two .header-btn .btn {
-  background: #000000;
+  background: #b8b8b8;
   border-radius: 0px;
+  pointer-events: none;
+}
+
+.menu-style-two .header-btn .btn::before {
+  content: "COMING SOON";
+  position: absolute;
+  bottom: -27px;
+  left: 26px;
+  color: #a6b5a0;
 }
 
 .menu-style-two .header-btn .btn::after {
@@ -1634,7 +1644,7 @@ label {
 }
 
 .section-title.section-title-two .sub-title {
-  color: #564dca;
+  color: #3cad2d;
   letter-spacing: 0.02em;
   padding: 0;
   text-decoration: underline;
@@ -1674,7 +1684,7 @@ label {
 }
 
 .about-content-two .about-list ul li i {
-  color: #564dca;
+  color: #3cad2d;
   margin-right: 10px;
 }
 
@@ -2008,7 +2018,7 @@ label {
 /* 10. Counter */
 
 .counter-area {
-  z-index: 9;
+  z-index: 8;
   position: relative;
   top: 22px;
 }
@@ -2026,7 +2036,7 @@ label {
 .counter-item {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .counter-icon {
@@ -2040,7 +2050,7 @@ label {
   align-items: center;
   color: #030b15;
   letter-spacing: -0.02em;
-  font-size: 48px;
+  font-size: 30px;
   line-height: 0.85;
   margin-bottom: -9px;
 }
@@ -2049,6 +2059,8 @@ label {
   margin-bottom: 0;
   color: #646580;
   line-height: 1.6;
+  margin-left: 5px;
+  margin-top: 8px;
 }
 
 /* 11. RoadMap */
@@ -2773,7 +2785,7 @@ label {
 
 .blog-meta ul li i {
   margin-right: 10px;
-  color: #564dca;
+  color: #3cad2d;
 }
 
 .blog-meta ul li a {
@@ -2781,7 +2793,7 @@ label {
 }
 
 .blog-meta ul li a:hover {
-  color: #564dca;
+  color: #3cad2d;
 }
 
 .blog-post-content .title {
@@ -2793,7 +2805,7 @@ label {
 }
 
 .blog-post-content .title a:hover {
-  color: #564dca;
+  color: #3cad2d;
 }
 
 .blog-post-content p {
@@ -2954,7 +2966,7 @@ label {
 }
 
 .rc-post-content .title a:hover {
-  color: #564dca;
+  color: #3cad2d;
 }
 
 .blog-widget .tag-list ul {
@@ -2981,8 +2993,8 @@ label {
 .blog-widget .tag-list ul li a:hover {
   opacity: 1;
   color: #fff;
-  background: #564dca;
-  border-color: #564dca;
+  background: #3cad2d;
+  border-color: #3cad2d;
 }
 
 .blog-widget:last-child {
@@ -3029,7 +3041,7 @@ label {
 }
 
 .bd-approach-content ul li i {
-  color: #564dca;
+  color: #3cad2d;
   margin-right: 15px;
 }
 
@@ -3096,7 +3108,7 @@ label {
 }
 
 .blog-details-tags ul li a:hover {
-  background: #564dca;
+  background: #3cad2d;
   color: #fff;
 }
 
@@ -3292,8 +3304,8 @@ label {
 .pagination-wrap ul li a:hover,
 .pagination-wrap ul li .current {
   color: #fff;
-  background: #564dca;
-  border-color: #564dca;
+  background: #3cad2d;
+  border-color: #3cad2d;
 }
 
 /* 18. Contact */
@@ -3550,7 +3562,7 @@ label {
 }
 
 .contact-form-wrap-two .btn.btn-two:hover {
-  background: #564dca;
+  background: #3cad2d;
 }
 
 /* 19. Newsletter */
@@ -3930,7 +3942,7 @@ label {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #564dca;
+  background: #3cad2d;
   padding: 0 0;
   border: none;
   color: #fff;

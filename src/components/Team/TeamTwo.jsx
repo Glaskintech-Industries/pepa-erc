@@ -9,23 +9,8 @@ const TeamTwo = () => {
   const team_members = [
     {
       src: img01,
-      name: "Cameron Williamson",
-      designation: "Founder & CO",
-    },
-    {
-      src: img02,
-      name: "Eleanor Pena",
-      designation: "Head of Design",
-    },
-    {
-      src: img03,
-      name: "Bessie Cooper",
-      designation: "Vp People",
-    },
-    {
-      src: img04,
-      name: "Darlene Robertson",
-      designation: "Product Manager",
+      name: "rhysHODL",
+      designation: "Dev (stepped up community member)",
     },
   ];
 
@@ -51,8 +36,17 @@ const TeamTwo = () => {
             </div>
           ))}
         </div>
+        <div className="row justify-content-center">
+          <div className="col-lg-6">
+            <div className="section-title text-center mb-60">
+              <h2 className="title">
+                More team members to be added soon <br />
+              </h2>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </section >
   );
 };
 

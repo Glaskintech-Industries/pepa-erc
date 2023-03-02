@@ -22,10 +22,8 @@ const HomeTwo = () => {
         <WhyChooseUsTwo />
         <RoadmapTwo />
         <TeamTwo />
-        <DownloadArea />
+        {/* <DownloadArea /> */}
         <Faq />
-        <ContactTwo />
-        <Newsletter />
       </main>
     </Layout>
   );

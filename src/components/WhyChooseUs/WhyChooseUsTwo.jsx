@@ -9,27 +9,27 @@ const WhyChooseUsTwo = () => {
   const items = [
     {
       src: icon01,
-      title: "Mobile payment make easy",
-      desc: "Add new, trending and rare artwork to your collection.",
-      url: "/home-two",
+      title: "Safely connect your wallet",
+      desc: "Connect your wallet safe and securely to our dApp. Metamask & Wallet Connect supported.",
+      url: "",
     },
     {
       src: icon02,
-      title: "Lifetime free transaction",
-      desc: "Add new, trending and rare artwork to your collection.",
-      url: "/home-two",
+      title: "Community Driven DAO",
+      desc: "Together we can build a better future for our community and make money together.",
+      url: "",
     },
     {
       src: icon03,
-      title: "Protect the identity",
-      desc: "Add new, trending and rare artwork to your collection.",
-      url: "/home-two",
+      title: "Evolving Use Cases",
+      desc: "Pepa Token will constantly have new utility & use cases in development.",
+      url: "",
     },
     {
       src: icon04,
-      title: "Sercurity & control over money",
-      desc: "Add new, trending and rare artwork to your collection.",
-      url: "/home-two",
+      title: "Renounced and Liquidity burnt",
+      desc: "Sleep on your bags - Rest assured that your funds are safe.",
+      url: "",
     },
   ];
 
@@ -40,7 +40,7 @@ const WhyChooseUsTwo = () => {
           <div className="col-lg-6">
             <div className="section-title text-center mb-70">
               <span className="sub-title">why Choose us</span>
-              <h2 className="title">Why you choose our bigtech Token</h2>
+              <h2 className="title">Why would you choose Pepa Token</h2>
             </div>
           </div>
         </div>

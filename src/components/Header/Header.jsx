@@ -6,25 +6,11 @@ import $ from "jquery";
 
 const Header = () => {
   // sticky nav bar
-  const [stickyClass, setStickyClass] = useState({
+  const [stickyClass] = useState({
     fixed: "",
     header: "",
   });
 
-  const stickNavbar = () => {
-    if (window !== undefined) {
-      let windowHeight = window.scrollY;
-      // window height changed for the demo
-      windowHeight < 245
-        ? setStickyClass({ fixed: "", header: "" })
-        : setStickyClass({ fixed: "active-height", header: "sticky-menu" });
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", stickNavbar);
-    return () => window.removeEventListener("scroll", stickNavbar);
-  }, []);
 
   // mobile menu
   useEffect(() => {
@@ -181,29 +167,14 @@ const Header = () => {
                   <div className="social-links">
                     <ul className="clearfix">
                       <li>
-                        <Link to="#">
-                          <i className="fab fa-facebook-f"></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
+                        <a href="https://twitter.com/PepaErc" target="_blank" rel="noreferrer">
                           <i className="fab fa-twitter"></i>
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="#">
-                          <i className="fab fa-instagram"></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <i className="fab fa-linkedin-in"></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="#">
-                          <i className="fab fa-youtube"></i>
-                        </Link>
+                        <a href="https://t.me/PepaErc">
+                          <i className="fab fa-telegram"></i>
+                        </a>
                       </li>
                     </ul>
                   </div>

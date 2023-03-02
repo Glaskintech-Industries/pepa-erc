@@ -950,6 +950,8 @@
   }
 
   .banner-text {
+    top: 177px;
+    left: -90px;
     margin: auto;
     text-shadow: 0px 1px 20px white;
   }
