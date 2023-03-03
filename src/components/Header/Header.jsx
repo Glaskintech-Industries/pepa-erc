@@ -138,7 +138,7 @@ const Header = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="header-action d-none d-md-block">
+                  <div className="header-action d-md-block">
                     <ul>
                       <li className="header-btn">
                         <Link to="#" className="btn" disabled={true}>

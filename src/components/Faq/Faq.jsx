@@ -32,36 +32,14 @@ const Faq = () => {
       contentClass: "",
       title: "Whats the recommended slippage?",
       details: `Due to the 0% tax, the recommended slippage is between 0.1% - 0.5%. This is to ensure that the transaction goes through but to try avoid the frontrunning MEV bots.`,
-    },
-    {
+    }, {
       id: "headingFour",
       controls: "collapseFour",
       expanded: false,
       btnClass: "collapsed",
       contentClass: "",
-      title: "How does the 30-day free software trial work?",
-      details: `LessAccounting is 100% web-based, meaning it can be
-      accessed from anywhere and there’s no software to
-      install on your computer. You can easily use
-      LessAccounting on your iPhone or any Android mobile
-      device with our cloud accounting. That is what makes it
-      the best small business accounting software options
-      among accounting programs.`,
-    },
-    {
-      id: "headingFive",
-      controls: "collapseFive",
-      expanded: false,
-      btnClass: "collapsed",
-      contentClass: "",
-      title: "How does the 30-day free software trial work?",
-      details: `LessAccounting is 100% web-based, meaning it can be
-      accessed from anywhere and there’s no software to
-      install on your computer. You can easily use
-      LessAccounting on your iPhone or any Android mobile
-      device with our cloud accounting. That is what makes it
-      the best small business accounting software options
-      among accounting programs.`,
+      title: "What is the token CA address?",
+      details: `Pepa CA address is: 0x577fee283e776eec29c9e4d258431982780a38a8`,
     },
   ];
 

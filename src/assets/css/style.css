@@ -705,7 +705,7 @@ label {
 .menu-style-two .header-btn .btn::before {
   content: "COMING SOON";
   position: absolute;
-  bottom: -27px;
+  bottom: -20px;
   left: 26px;
   color: #a6b5a0;
 }
@@ -1027,7 +1027,7 @@ label {
 .banner-text {
   width: 50%;
   position: relative;
-  top: 181px;
+  top: 7vw;
 }
 
 .banner-shape-wrap img {
@@ -1823,6 +1823,18 @@ label {
   background-repeat: no-repeat;
   /* background-size: 0 100%; */
   transition: background-size 0.4s ease-in-out;
+}
+
+.banner-bg-two:before {
+  background-image: url(../img/banner/banner-checker.png);
+  content: "";
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 6vw;
+  width: 100%;
+  display: block;
+  background-size: contain;
 }
 
 /* choose-two */

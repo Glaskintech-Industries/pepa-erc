@@ -11,7 +11,7 @@ const CounterAreaItem = (props) => {
       <div className="counter-content">
         <h2 className="count">
           {/* <span className="odometer" data-count="280"></span> */}
-          <Odometer
+          $<Odometer
             value={props.amount}
             format="(,ddd).dd"
             duration={1000}

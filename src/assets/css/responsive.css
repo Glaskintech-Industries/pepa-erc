@@ -198,16 +198,12 @@
   }
 
   .banner-text {
-    top: 153px;
+    top: 6vw;
   }
 
   .banner-area-two .banner-content .title {
     line-height: 1;
     font-size: 40px;
-  }
-
-  .banner-bg-two::before {
-    height: 600px;
   }
 
   .comment-form .btn,
@@ -258,7 +254,7 @@
   }
 
   .banner-text {
-    top: 170px;
+    top: 10vw;
     left: -15px;
   }
 
@@ -472,7 +468,7 @@
   }
 
   .banner-bg-two::before {
-    height: 480px;
+    height: 150px;
   }
 
   .banner-bg-two {
@@ -857,7 +853,7 @@
   }
 
   .banner-bg-two::before {
-    height: 400px;
+    height: 120px;
   }
 
   .ClassyCountdown-wrapper {
@@ -950,8 +946,8 @@
   }
 
   .banner-text {
-    top: 177px;
-    left: -90px;
+    top: 33vw;
+    left: -20vw;
     margin: auto;
     text-shadow: 0px 1px 20px white;
   }
@@ -1259,7 +1255,7 @@
   }
 
   .banner-bg-two::before {
-    height: 260px;
+    height: 120px;
     background-position: bottom;
   }
 
@@ -1477,5 +1473,21 @@
 
   .rc-post-content .title {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 467.98px) {
+  .header-action {
+    margin-right: 14px;
+    margin-top: 10px;
+
+  }
+
+  .header-btn .btn {
+    padding: 9px 15px;
+  }
+
+  .logo img {
+    max-height: 51px;
   }
 }

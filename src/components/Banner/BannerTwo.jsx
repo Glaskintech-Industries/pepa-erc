@@ -36,6 +36,12 @@ const BannerTwo = () => {
             </a>
             <span>Telegram</span>
           </li>
+          <li>
+            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x6b316f568e67306791b642afa6e0674ec7853bac" target="_blank" rel="noreferrer" className="banner-social-link">
+            <i className="fas fa-chart-bar"></i>
+            </a>
+            <span>Dextools</span>
+          </li>
         </ul>
       </div>
       <div className="banner-scroll">
