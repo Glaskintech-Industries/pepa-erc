@@ -56,7 +56,7 @@ const RoadmapTwo = () => {
     },
     {
       roadmapTitle: "Stretch Goals",
-      title: "Stepping up the Game",
+      title: "Look into the future",
       info: <><li>- NFT Marketplace</li>
         <li>- Launch Pad</li>
         <li>- Metaverse (UE5)</li>
