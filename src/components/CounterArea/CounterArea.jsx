@@ -1,23 +1,10 @@
 import React, { useEffect, useState } from "react";
 import icon from "../../assets/img/icon/counter_icon01.svg";
+import { useMoralisDapp } from "../../../src/utils/MoralisDappProvider/MoralisDappProvider";
 import CounterAreaItem from "./CounterAreaItem";
 
 const CounterArea = () => {
-  const [amount, setAmount] = useState(210);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      if (parseFloat(amount) < 999) {
-        const newNumber = parseFloat(amount) + 10;
-
-        setAmount(newNumber);
-      }
-    }, 1000 * 10);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, [amount]);
+  const { tokenPrice } = useMoralisDapp();
 
   return (
     <section className="counter-area">
@@ -27,7 +14,7 @@ const CounterArea = () => {
             <div className="col-lg-4 col-sm-6">
               <CounterAreaItem
                 icon={icon}
-                amount={0}
+                amount={tokenPrice?.usdPrice || 0}
                 title="Price"
                 suffix=""
               />
@@ -36,7 +23,7 @@ const CounterArea = () => {
             <div className="col-lg-4 col-sm-6">
               <CounterAreaItem
                 icon={icon}
-                amount={0}
+                amount={(1000000000000 * tokenPrice?.usdPrice / 1000).toFixed(0) || 0}
                 title="Marketcap"
                 suffix="K"
               />

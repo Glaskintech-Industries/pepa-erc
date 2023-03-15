@@ -468,7 +468,7 @@
   }
 
   .banner-bg-two::before {
-    height: 150px;
+    height: 80px;
   }
 
   .banner-bg-two {
@@ -853,7 +853,7 @@
   }
 
   .banner-bg-two::before {
-    height: 120px;
+    height: 70px;
   }
 
   .ClassyCountdown-wrapper {
@@ -1255,7 +1255,7 @@
   }
 
   .banner-bg-two::before {
-    height: 120px;
+    height: 70px;
     background-position: bottom;
   }
 
@@ -1376,6 +1376,10 @@
   .bd-approach-wrap {
     margin: 40px 0 35px;
   }
+
+  .about-area-two {
+    padding: 55px 0;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1477,6 +1481,7 @@
 }
 
 @media (max-width: 467.98px) {
+  
   .header-action {
     margin-right: 14px;
     margin-top: 10px;
@@ -1489,5 +1494,11 @@
 
   .logo img {
     max-height: 51px;
+  }
+  .banner-area-two {
+    min-height: 75vh;
+  }
+  .banner-bg-two::before {
+    height: 50px;
   }
 }

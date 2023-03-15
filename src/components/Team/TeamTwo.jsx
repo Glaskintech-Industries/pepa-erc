@@ -1,8 +1,5 @@
 import React from "react";
 import img01 from "../../assets/img/team/h2_team_img01.png";
-import img02 from "../../assets/img/team/h2_team_img02.png";
-import img03 from "../../assets/img/team/h2_team_img03.png";
-import img04 from "../../assets/img/team/h2_team_img04.png";
 import TeamTwoItem from "./TeamTwoItem";
 
 const TeamTwo = () => {

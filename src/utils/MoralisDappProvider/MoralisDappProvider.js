@@ -8,30 +8,39 @@ function MoralisDappProvider({ children }) {
   const { web3, Moralis, user, isWeb3Enabled, enableWeb3, isAuthenticated, isWeb3EnableLoading } = useMoralis();
   const [walletAddress, setWalletAddress] = useState();
   const [chainId, setChainId] = useState();
-  const [tokenPrice, setTokenPrice] = useState(0);
+  const [tokenPrice, setTokenPrice] = useState(undefined);
   const Web3Api = useMoralisWeb3Api();
 
-  const tokenSupply = 1000000000000;
   const tokenDecimals = 9;
   const tokenAddress = "0x577fee283e776eec29c9e4d258431982780a38a8"
-
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
   useEffect(() => {
     if (isAuthenticated && !isWeb3Enabled && !isWeb3EnableLoading) enableWeb3();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuthenticated, isWeb3Enabled]);
 
-  const fetchTokenPrice = async (data) => {
-    const { address, chain, exchange } = data;
-    const stakingOptions = {
-      address,
-      chain,
-      exchange,
-    };
-    const price = await Web3Api.token.getTokenPrice(stakingOptions).catch(err => console.log("Initilizing Moralis"));
-    return price
-  };
+  const fetchTokenPrice = async () => {    
+    await sleep(1000)
+    await Web3Api.token.getTokenPrice({  
+      address: tokenAddress,
+      chain: "eth",
+      exchange: "Uniswapv2"
+      })
+      .then(data => {
+      console.log(data)
+      setTokenPrice(data)
+      })
+    }
 
-  useEffect(() => {
+    useEffect(() => {
+      // Ensure Web3Api is loaded before fetching token price
+     if (Web3Api && tokenPrice ===  undefined) {
+      setTokenPrice(0)
+      fetchTokenPrice();
+    }
+    }, [Web3Api]);
+    
+    useEffect(() => {
     Moralis?.onChainChanged(function (chain) {
       setChainId(chain);
     });
@@ -45,20 +54,8 @@ function MoralisDappProvider({ children }) {
     [web3, user]
   );
 
-  const sleep = ms => new Promise(r => setTimeout(r, ms));
-
-  // useEffect(() => {
-  //     fetchTokenPrice({
-  //       address: tokenAddress,
-  //       chain: "eth",
-  //       exchange: "Uniswapv2",
-  //     }).then(data => {
-  //       setTokenPrice(data)
-  //     })
-  // })
-
   return (
-    <MoralisDappContext.Provider value={{ walletAddress, chainId, fetchTokenPrice, tokenAddress, tokenPrice, tokenDecimals }}>
+    <MoralisDappContext.Provider value={{ walletAddress, chainId, tokenAddress, tokenPrice, tokenDecimals }}>
       {children}
     </MoralisDappContext.Provider>
   );

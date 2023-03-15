@@ -2,8 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import { useEffect } from "react";
 import WOW from "wow.js";
-import Blog from "./pages/Blog/Blog";
-import BlogDetailsPage from "./pages/BlogDetails/BlogDetailsPage";
 import { useLocation } from "react-router-dom";
 import { MoralisProvider } from "react-moralis";
 import { MoralisDappProvider } from "./utils/MoralisDappProvider/MoralisDappProvider";
@@ -36,8 +34,6 @@ function App() {
       <MoralisDappProvider>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="blog-details" element={<BlogDetailsPage />} />
       </Routes>
       </MoralisDappProvider>
       </MoralisProvider>

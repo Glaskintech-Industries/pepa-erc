@@ -699,15 +699,6 @@ label {
 .menu-style-two .header-btn .btn {
   background: #b8b8b8;
   border-radius: 0px;
-  pointer-events: none;
-}
-
-.menu-style-two .header-btn .btn::before {
-  content: "COMING SOON";
-  position: absolute;
-  bottom: -20px;
-  left: 26px;
-  color: #a6b5a0;
 }
 
 .menu-style-two .header-btn .btn::after {
@@ -2704,6 +2695,7 @@ label {
   color: #727885;
   font-size: 18px;
   line-height: 1.55;
+  word-break: break-word;
 }
 
 .faq-wrap .accordion-item:last-of-type .accordion-button.collapsed {

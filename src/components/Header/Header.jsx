@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { useModal } from "../../utils/ModalContext";
+import { Link, useLocation } from "react-router-dom";
 import cn from "classnames";
 import logoImage from "../../../src/assets/img/logo/logo.png";
 import $ from "jquery";
+import { useMoralis } from "react-moralis";
 
 const Header = () => {
+  const { walletModalHandle } = useModal();
+  const { isAuthenticated, logout } = useMoralis();
   // sticky nav bar
   const [stickyClass] = useState({
     fixed: "",
@@ -56,10 +60,15 @@ const Header = () => {
   };
 
   // active link switching
-  const { hash, pathname } = useLocation();
+  const { hash } = useLocation();
   const isActiveLink = (id) => {
     return id === hash ? "active" : "";
   };
+
+  const handleWalletBtn = (e) => {
+    e.preventDefault();
+    walletModalHandle()
+  }
 
   return (
     <header id="header">
@@ -141,9 +150,17 @@ const Header = () => {
                   <div className="header-action d-md-block">
                     <ul>
                       <li className="header-btn">
-                        <Link to="#" className="btn" disabled={true}>
-                          <i className="fas fa-wallet"></i> {' '} Connect
-                        </Link>
+                      {!isAuthenticated ? <button
+                        className="btn"
+                        onClick={e => handleWalletBtn(e)}
+                      >
+                        <i className="fas fa-wallet"></i> {' '} Connect
+                      </button> : <button
+                        className="btn"
+                        onClick={e => { logout()}}
+                      >
+                        <i className="fas fa-wallet"></i> {' '} Logout
+                      </button>}
                       </li>
                     </ul>
                   </div>

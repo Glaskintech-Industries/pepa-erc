@@ -1,6 +1,5 @@
 import React from "react";
 import icon from "../../assets/img/icon/scroll_icon.svg";
-import bannerImg from "../../assets/img/banner/banner_img.png";
 import { Link } from "react-router-dom";
 import { handleClickScroll } from "../../lib/helpers";
 

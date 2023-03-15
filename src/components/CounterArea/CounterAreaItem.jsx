@@ -13,7 +13,7 @@ const CounterAreaItem = (props) => {
           {/* <span className="odometer" data-count="280"></span> */}
           $<Odometer
             value={props.amount}
-            format="(,ddd).dd"
+            format="(,ddd).ddddddddd"
             duration={1000}
             animation={"count"}
           />
