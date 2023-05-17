@@ -11,16 +11,15 @@ import Layout from "../../layouts/Layout";
 import WalletModal from "../../components/modal/walletModal/WalletModal";
 import MetamaskModal from "../../components/modal/metamaskModal/MetamaskModal";
 
-
 const HomeTwo = () => {
   const { walletModalvisibility, metamaskModal } = useModal();
   return (
     <Layout>
       <main>
-      {walletModalvisibility && <WalletModal />}
+        {walletModalvisibility && <WalletModal />}
         {metamaskModal && <MetamaskModal />}
         <BannerTwo />
-        <CounterArea />
+        {/* <CounterArea /> */}
         <About />
         <WhyChooseUsTwo />
         <RoadmapTwo />

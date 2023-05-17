@@ -6,26 +6,29 @@ const RoadmapTwo = () => {
     {
       roadmapTitle: "Q1 2023 - February",
       title: "Rise from the ashes",
-      info: <>Pepa launches the V2 Website<br />
-        <li>- New domain URL</li>
-        <li>- New Look & more content</li>
-        <li>- Web3 dApp connectivity</li>
-      </>,
-    },
-    {
-      roadmapTitle: "Q1 2023 - March",
-      title: "Kick things up a gear",
       info: (
         <>
-          <li>- CMC Listing</li>
-          <li>- Coin Gecko Listing</li>
-          <li>- dApp Live</li>
-          <li>- Pepa Staking w/ rewards</li>
+          Pepa launches the V2 Website ✅<br />
+          <li>- New domain URL ✅</li>
+          <li>- New Look & more content ✅</li>
+          <li>- Web3 dApp connectivity ✅</li>
         </>
       ),
     },
     {
-      roadmapTitle: "Q2 2023 - April",
+      roadmapTitle: "Q1 2023 - March/April",
+      title: "Kick things up a gear",
+      info: (
+        <>
+          <li>- CMC Listing✅</li>
+          <li>- Coin Gecko Listing✅</li>
+          <li>- dApp Live✅</li>
+          <li>- Pepa Staking w/ rewards✅</li>
+        </>
+      ),
+    },
+    {
+      roadmapTitle: "Q2 2023 - May/June",
       title: "Stronger Foundations",
       info: (
         <>
@@ -37,31 +40,40 @@ const RoadmapTwo = () => {
       ),
     },
     {
-      roadmapTitle: "Q2 2023 - May/June",
+      roadmapTitle: "Q3 2023 - August/September",
       title: "Operational",
-      info: <><li>- CEX Listing</li>
-        <li>- YouTube Reviews</li>
-        <li>- Onboard Ambassador</li>
-        <li>- LP Staking added</li>
-      </>,
+      info: (
+        <>
+          <li>- CEX Listing</li>
+          <li>- YouTube Reviews</li>
+          <li>- Onboard Ambassador</li>
+          <li>- LP Staking added</li>
+        </>
+      ),
     },
     {
-      roadmapTitle: "Q3 2023 - August/September",
+      roadmapTitle: "Q4 2023 - November/December",
       title: "Stepping up the Game",
-      info: <><li>- NFT Run (Round 2)</li>
-        <li>- Cross chain liquidity</li>
-        <li>- CEX Listing</li>
-        <li>- Execute marketing strategy</li>
-      </>,
+      info: (
+        <>
+          <li>- NFT Run (Round 2)</li>
+          <li>- Cross chain liquidity</li>
+          <li>- CEX Listing</li>
+          <li>- Execute marketing strategy</li>
+        </>
+      ),
     },
     {
       roadmapTitle: "Stretch Goals",
       title: "Look into the future",
-      info: <><li>- NFT Marketplace</li>
-        <li>- Launch Pad</li>
-        <li>- Metaverse (UE5)</li>
-        <li>+ More in the future</li>
-      </>,
+      info: (
+        <>
+          <li>- NFT Marketplace</li>
+          <li>- Launch Pad</li>
+          <li>- Metaverse (UE5)</li>
+          <li>+ More in the future</li>
+        </>
+      ),
     },
   ];
 

@@ -15,7 +15,6 @@ const Header = () => {
     header: "",
   });
 
-
   // mobile menu
   useEffect(() => {
     //SubMenu Dropdown Toggle
@@ -67,8 +66,8 @@ const Header = () => {
 
   const handleWalletBtn = (e) => {
     e.preventDefault();
-    walletModalHandle()
-  }
+    walletModalHandle();
+  };
 
   return (
     <header id="header">
@@ -118,6 +117,14 @@ const Header = () => {
                           About us
                         </Link>
                       </li>
+                      <li>
+                        <a
+                          href="https://staking.pepaerc.io"
+                          className="section-link"
+                        >
+                          staking
+                        </a>
+                      </li>
                       <li className={isActiveLink("#roadmap")}>
                         <Link
                           to="#roadmap"
@@ -150,17 +157,33 @@ const Header = () => {
                   <div className="header-action d-md-block">
                     <ul>
                       <li className="header-btn">
-                      {!isAuthenticated ? <button
-                        className="btn"
-                        onClick={e => handleWalletBtn(e)}
-                      >
-                        <i className="fas fa-wallet"></i> {' '} Connect
-                      </button> : <button
-                        className="btn"
-                        onClick={e => { logout()}}
-                      >
-                        <i className="fas fa-wallet"></i> {' '} Logout
-                      </button>}
+                        {/* {!isAuthenticated ? (
+                          <button
+                            className="btn"
+                            disabled={true}
+                            onClick={(e) => handleWalletBtn(e)}
+                          >
+                            <i className="fas fa-wallet"></i> Connect
+                          </button>
+                        ) : (
+                          <button
+                            className="btn"
+                            onClick={(e) => {
+                              logout();
+                            }}
+                          >
+                            <i className="fas fa-wallet"></i> Logout
+                          </button>
+                        )} */}
+                        <button
+                          className="btn"
+                          onClick={(e) =>
+                            (window.location =
+                              "https://app.uniswap.org/#/swap?exactField=input&exactAmount=1&outputCurrency=0x577fee283e776eec29c9e4d258431982780a38a8")
+                          }
+                        >
+                          <i className="fas fa-wallet"></i>Buy
+                        </button>
                       </li>
                     </ul>
                   </div>
@@ -184,7 +207,11 @@ const Header = () => {
                   <div className="social-links">
                     <ul className="clearfix">
                       <li>
-                        <a href="https://twitter.com/PepaErc" target="_blank" rel="noreferrer">
+                        <a
+                          href="https://twitter.com/PepaErc"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <i className="fab fa-twitter"></i>
                         </a>
                       </li>
